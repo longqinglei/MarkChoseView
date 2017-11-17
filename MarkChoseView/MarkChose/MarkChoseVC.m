@@ -9,12 +9,12 @@
 #import "MarkChoseVC.h"
 #import "MarkItemCell.h"
 #import "QL_CustomFlowLayout.h"
-#import "config.h"
+
 
 @interface MarkChoseVC ()<UICollectionViewDataSource,UICollectionViewDelegate,UICollectionViewDelegateFlowLayout>
 
 @property (nonatomic,strong) UICollectionView *collectionView;
-@property (nonatomic,strong) NSMutableArray *dataArray;
+
 @property (nonnull, strong) NSMutableArray *choseArray;
 
 @end
@@ -43,7 +43,7 @@
 }
 
 - (void)initSubViews{
-    QL_CustomFlowLayout * flowLayout = [[QL_CustomFlowLayout alloc]initWithType:AlignWithCenter betweenOfCell:5.0];
+    QL_CustomFlowLayout * flowLayout = [[QL_CustomFlowLayout alloc]initWithType:self.type betweenOfCell:5.0];
     self.collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height) collectionViewLayout:flowLayout];
     self.collectionView.backgroundColor = [UIColor colorWithRed:237/255.0 green:236/255.0 blue:234/255.0 alpha:1];
     self.collectionView.delegate = self;

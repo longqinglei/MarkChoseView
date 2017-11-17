@@ -7,11 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-typedef NS_ENUM(NSInteger,AlignType){
-    AlignWithLeft,
-    AlignWithCenter,
-    AlignWithRight
-};
+#import "config.h"
 
 @interface ItemData : NSObject
 
