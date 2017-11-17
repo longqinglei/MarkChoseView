@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "config.h"
 
 @interface MarkChoseVC : UIViewController
 
-@end
+@property (nonatomic,strong) NSMutableArray *dataArray;
+
+@property (nonatomic, assign) AlignType type;
+
+@end 

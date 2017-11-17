@@ -20,8 +20,21 @@
     // Do any additional setup after loading the view, typically from a nib.
 }
 
+- (IBAction)beginChoseLeft:(UIButton *)sender {
+    MarkChoseVC *markVC = [[MarkChoseVC alloc]init];
+    markVC.type = AlignWithLeft;
+    [self.navigationController pushViewController:markVC animated:YES];
+}
+
+
 - (IBAction)beginChose:(UIButton *)sender {
     MarkChoseVC *markVC = [[MarkChoseVC alloc]init];
+    markVC.type = AlignWithCenter;
+    [self.navigationController pushViewController:markVC animated:YES];
+}
+- (IBAction)beginChoseRight:(UIButton *)sender {
+    MarkChoseVC *markVC = [[MarkChoseVC alloc]init];
+    markVC.type = AlignWithRight;
     [self.navigationController pushViewController:markVC animated:YES];
 }
 

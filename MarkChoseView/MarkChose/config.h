@@ -9,6 +9,13 @@
 #ifndef config_h
 #define config_h
 
+typedef NS_ENUM(NSInteger,AlignType){
+    AlignWithLeft,
+    AlignWithCenter,
+    AlignWithRight
+};
+
+
 #define kFooterHeight               60  //尾视图高度
 #define kHeaderEdgeHeight           50  //上面空出的高度
 #define kItemHegith                 40  //cell的高度

@@ -19,16 +19,34 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CFw-6Q-KR7">
-                                <rect key="frame" x="141" y="318" width="92" height="30"/>
-                                <state key="normal" title="开始选择标签"/>
+                                <rect key="frame" x="125.5" y="318" width="123" height="30"/>
+                                <state key="normal" title="开始选择居中标签"/>
                                 <connections>
                                     <action selector="beginChose:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fSj-ZN-bYa"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nlu-1f-O4f">
+                                <rect key="frame" x="125" y="242" width="123" height="30"/>
+                                <state key="normal" title="开始选择居左标签"/>
+                                <connections>
+                                    <action selector="beginChoseLeft:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BPq-z6-Uln"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LiR-1Y-6Do">
+                                <rect key="frame" x="126" y="391" width="123" height="30"/>
+                                <state key="normal" title="开始选择居右标签"/>
+                                <connections>
+                                    <action selector="beginChoseRight:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gyS-yF-dNe"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="CFw-6Q-KR7" firstAttribute="top" secondItem="Nlu-1f-O4f" secondAttribute="bottom" constant="46" id="8sW-67-tfR"/>
+                            <constraint firstItem="LiR-1Y-6Do" firstAttribute="centerX" secondItem="CFw-6Q-KR7" secondAttribute="centerX" id="LoZ-N0-LFA"/>
                             <constraint firstItem="CFw-6Q-KR7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="NUv-l3-gxq"/>
+                            <constraint firstItem="Nlu-1f-O4f" firstAttribute="centerX" secondItem="CFw-6Q-KR7" secondAttribute="centerX" id="UPY-oq-gJF"/>
+                            <constraint firstItem="LiR-1Y-6Do" firstAttribute="top" secondItem="CFw-6Q-KR7" secondAttribute="bottom" constant="43" id="ZpC-bf-Bod"/>
                             <constraint firstItem="CFw-6Q-KR7" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="lwM-BK-fGn"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
